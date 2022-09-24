@@ -59,9 +59,9 @@ body {
 }
 
 @keyframes etchBorder {
-  0%   {transform: scale(1, 1)}
-  50%   {transform: scale(0.98, 0.98)}
-  100% {transform: scale(1, 1)}
+  0%   {transform: scale(1, 1); border-width: 5px; border-color: #F5E8C7;}
+  50%   {transform: scale(0.98, 0.98); border-width: 10px; border-color: #f5e8c7a4;}
+  100% {transform: scale(1, 1); border-width: 5px; border-color: #F5E8C7;}
 }
 
 #etch-grid{
@@ -69,8 +69,7 @@ body {
   width: 500px;
   height: 500px;  
   margin: 15px;
-  border: 1px solid #AC7088;
-  border-color: #AC7088;
+
   border: #F5E8C7 solid;
   border-radius: 0px;
   border-width: 5px;
