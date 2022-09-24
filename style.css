@@ -17,10 +17,26 @@ body {
 
 }
 
+@keyframes breathing2 {
+  0%   {transform: scale(1, 1)}
+  50%   {transform: scale(1.1, 1.1)}
+  100% {transform: scale(1, 1)}
+}
+
 .words {
   font-size: large;
   padding: 10px;
   color: #AC7088;
+
+  animation-name: breathing2;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes breathing {
+  0%   {transform: scale(1, 1)}
+  50%   {transform: scale(1.010, 1.010)}
+  100% {transform: scale(1, 1)}
 }
 
 .page-content {
@@ -36,9 +52,16 @@ body {
   background-color: #DEB6AB;
   padding: 15px;
 
+  animation-name: breathing;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 
+}
 
-
+@keyframes etchBorder {
+  0%   {transform: scale(1, 1)}
+  50%   {transform: scale(0.98, 0.98)}
+  100% {transform: scale(1, 1)}
 }
 
 #etch-grid{
@@ -47,7 +70,14 @@ body {
   height: 500px;  
   margin: 15px;
   border: 1px solid #AC7088;
-  border-color: #AC7088
+  border-color: #AC7088;
+  border: #F5E8C7 solid;
+  border-radius: 0px;
+  border-width: 5px;
+
+  animation-name: etchBorder;
+  animation-duration: 5.5s;
+  animation-iteration-count: infinite;
 }
 
 #grid-size-input-wrapper{
