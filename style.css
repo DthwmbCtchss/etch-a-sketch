@@ -1,0 +1,106 @@
+body {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0px;  
+  background-color: #ECCCB2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 79vh;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+.words {
+  font-size: large;
+  padding: 10px;
+  color: #AC7088;
+}
+
+.page-content {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 885px;
+  flex-basis: 40%;
+  background-color: #DEB6AB;
+  padding: 15px;
+
+
+
+
+}
+
+#etch-grid{
+  margin: auto;
+  width: 500px;
+  height: 500px;  
+  margin: 15px;
+  border: 1px solid #AC7088;
+  border-color: #AC7088
+}
+
+#grid-size-input-wrapper{
+  display: inline-flex;
+  align-items: center;
+}
+
+#grid-size-number-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu{
+  display: flex;
+  justify-content: center;
+  gap: 35px;  
+}
+
+.grid-size-number{
+  padding-right: 5px;
+  width: 43px;
+  text-align: end;
+  font-size: 25px;
+  color: #AC7088;
+}
+
+.grid-size-arrow{
+  font-size: 25px;
+  color: #AC7088;
+}
+
+.grid-size-arrow:hover{
+  color: #c688a0;
+}
+
+#grid-size-input:focus{
+  border-color:#ECCCB2
+}
+
+.flex-grid {
+  display: flex;
+
+}
+
+.col {
+  flex: 1;
+  box-sizing: border-box;
+  display: inline-flex;
+  /* border: 1px solid #AC7088;
+  border-color: #AC7088 */
+}
+
+.col:hover{
+  background-color: #c688a0;
+}
